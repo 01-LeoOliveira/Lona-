@@ -9,17 +9,14 @@ const Sobre = () => {
       </h2>
 
       {/* Caixa verde com texto */}
-      <div className="relative left-0 w-[70%] h-[300px] bg-[#4B994B] p-8 text-white shadow-md">
-        <p>
+      <div className="relative left-0 w-full sm:w-[90%] md:w-[80%] lg:w-[70%] h-auto bg-[#4B994B] p-6 sm:p-8 text-white shadow-md rounded-lg">
+        <p className="text-sm sm:text-base md:text-lg">
           Nossa missão é entregar aos nossos clientes lonas da melhor qualidade,
           para você usar como cobertura de cargas, tendas, galpões e capas de piscinas.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 text-sm sm:text-base md:text-lg">
           Sejam lonas com medidas pré-estabelecidas até lonas especialmente confeccionadas ao gosto do cliente.
         </p>
-
-        {/* Setas decorativas */}
-        {/* <div className="absolute bottom-[-20px] right-[-40px] w-[200px] h-[50px] bg-yellow-400 "></div> */}
       </div>
     </div>
   );
