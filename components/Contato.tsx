@@ -2,9 +2,9 @@ import React from "react";
 
 const Contato = () => {
     return (
-        <div className="bg-[#f2f5f7] py-16 flex flex-col items-center">
+        <div className="bg-white py-16 flex flex-col items-center">
             <h2 className="text-[#268735] text-3xl font-semibold mb-8">CONSULTORIA E DÚVIDAS</h2>
-            <form className="bg-white w-[80%] md:w-[60%] lg:w-[50%] p-8 rounded-md shadow-md">
+            <form className="bg-[#cccccc] w-[80%] md:w-[70%] lg:w-[60%] p-8 rounded-2xl shadow-md">
                 <div className="flex flex-col md:flex-row md:space-x-4 mb-4">
                     <div className="w-full md:w-1/2 mb-4 md:mb-0">
                         <label htmlFor="nome" className="block text-gray-700 font-semibold mb-2">Nome</label>
@@ -42,9 +42,11 @@ const Contato = () => {
                         placeholder="Digite sua mensagem"
                     ></textarea>
                 </div>
-                <button type="submit" className="w-full bg-[#268735] text-white py-2 rounded-md hover:bg-[#47a047]">
-                    Enviar
-                </button>
+                <div className="flex justify-center">
+                    <button type="submit" className="bg-[#268735] text-white py-2 rounded-md hover:bg-[#47a047] w-1/2 max-w-xs ">
+                        Enviar
+                    </button>
+                </div>
             </form>
         </div>
     );

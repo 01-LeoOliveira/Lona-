@@ -1,66 +1,72 @@
 import React from "react";
 
 const Produtos = () => {
-
     return (
         <div>
-            <div className="bg-[#f2f5f7] py-16 flex flex-col items-center">
-                <h2 className="text-[#268735] text-3xl font-semibold mb-8">PRODUTOS</h2>
+            {/* Título dos produtos */}
+            <div className="py-8 flex justify-center">
+                <h2 className="text-[#268735] text-3xl font-semibold">PRODUTOS</h2>
+            </div>
 
-                <div className="relative bg-[#D7E8D7] w-full p-8 rounded-md flex items-center">
-                    {/* Seta esquerda */}
-                    <div className="absolute left-0 flex items-center justify-center w-16 h-full bg-[#268735]/70 cursor-pointer hidden lg:flex">
-                        <span className="text-white text-3xl">{"<"}</span>
+            {/* galeria de produtos */}
+            <div className="py-8 bg-[#b4e9a2] flex flex-col items-center">
+                <div className="flex flex-wrap justify-center gap-4">
+                    {/* produto 1 */}
+                    <div className="text-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <p className="mt-2 font-semibold">Lona para piscina</p>
+                        <img
+                            src="/imagens/piscina.png"
+                            alt="Lona para piscina"
+                            className="rounded-lg shadow-md border-[#46c2fc] border-4 h-auto w-full max-w-xs hover:border-white cursor-pointer"
+                        />
                     </div>
-
-                    {/* Galeria de produtos */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto cursor-pointer ">
-                        {/* Produto 1 */}
-                        <div className="text-center">
-                            <p className="mt-2 font-semibold">Lona para Caminhão</p>
-                            <img
-                                src="/imagens/caminhão.png"
-                                alt="Lona para Caminhão"
-                                className="rounded-lg shadow-md border-[#45ee72] border-4"
-                            />
-                        </div>
-                        {/* Produto 2 */}
-                        <div className="text-center">
-                            <p className="mt-2 font-semibold">Lona para Piscina</p>
-                            <img
-                                src="/imagens/piscina.png"
-                                alt="Lona para Piscina"
-                                className="rounded-lg shadow-md border-[#45ee72] border-4"
-                            />
-                        </div>
-                        {/* Produto 3 */}
-                        <div className="text-center">
-                            <p className="mt-2 font-semibold">Tendas</p>
-                            <img
-                                src="/imagens/tenda.png"
-                                alt="Tendas"
-                                className="rounded-lg shadow-md border-[#45ee72] border-4"
-                            />
-                        </div>
-                        {/* Produto 4 */}
-                        <div className="text-center">
-                            <p className="mt-2 font-semibold">Lona para Galpões</p>
-                            <img
-                                src="/imagens/galpões.png"
-                                alt="Lona para Galpões"
-                                className="rounded-lg shadow-md border-[#45ee72] border-4"
-                            />
-                        </div>
+                    {/* produto 2 */}
+                    <div className="text-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <p className="mt-2 font-semibold">Tendas</p>
+                        <img
+                            src="/imagens/tenda.png"
+                            alt="Tendas"
+                            className="rounded-lg shadow-md border-[#46c2fc] border-4 h-auto w-full max-w-xs hover:border-white cursor-pointer"
+                        />
                     </div>
-
-                    {/* Seta direita */}
-                    <div className="absolute right-0 flex items-center justify-center w-16 h-full bg-[#268735]/70 cursor-pointer hidden lg:flex">
-                        <span className="text-white text-3xl">{">"}</span>
+                    {/* produto 3 */}
+                    <div className="text-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <p className="mt-2 font-semibold">Lona para galpão</p>
+                        <img
+                            src="/imagens/galpões.png"
+                            alt="Lona para galpão"
+                            className="rounded-lg shadow-md border-[#46c2fc] border-4 h-auto w-full max-w-xs hover:border-white cursor-pointer"
+                        />
+                    </div>
+                    {/* produto 4 */}
+                    <div className="text-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <p className="mt-2 font-semibold">Lona para caminhão</p>
+                        <img
+                            src="/imagens/caminhão.png"
+                            alt="Lona para caminhão"
+                            className="rounded-lg shadow-md border-[#46c2fc] border-4 h-auto w-full max-w-xs hover:border-white cursor-pointer"
+                        />
+                    </div>
+                    {/* produto 5 */}
+                    <div className="text-center p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                        <p className="mt-2 font-semibold">Lona para toldo</p>
+                        <img
+                            src="/imagens/toldo.png"
+                            alt="Lona para toldo"
+                            className="rounded-lg shadow-md border-[#46c2fc] border-4 h-auto w-full max-w-xs hover:border-white cursor-pointer"
+                        />
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Produtos;
+
+
+
+
+
+
+

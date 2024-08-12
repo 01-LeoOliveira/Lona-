@@ -1,4 +1,5 @@
 import Contato from "@/components/Contato";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 import Produtos from "@/components/Produtos";
@@ -13,6 +14,7 @@ export default function Home() {
       <Sobre />
       <Produtos />
       <Contato />
+      <Footer />
     </div>
   );
 }

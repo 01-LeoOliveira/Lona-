@@ -11,7 +11,7 @@ const Header = () => {
       {/* Espaço reservado para a imagem */}
       <div className="w-full h-[300px] md:h-[560px] bg-gray-200 flex items-center justify-center">
         {/* Adicione sua imagem aqui */}
-        <img src="/path/to/your/image.jpg" alt="Banner" className="w-full h-full object-cover" />
+        <img src="/imagens/logo.jpeg" alt="Banner" className="w-full h-full " />
       </div>
     </div>
   );
