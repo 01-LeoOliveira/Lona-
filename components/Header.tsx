@@ -1,6 +1,11 @@
 import React from "react";
 
-const Header = () => {
+// Definir props para o Header
+interface HeaderProps {
+  imageSrc: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ imageSrc }) => {
   return (
     <div>
       {/* Nome da empresa */}
@@ -10,8 +15,7 @@ const Header = () => {
       
       {/* Espaço reservado para a imagem */}
       <div className="w-full h-[300px] md:h-[560px] bg-gray-200 flex items-center justify-center">
-        {/* Adicione sua imagem aqui */}
-        <img src="/imagens/logo.jpeg" alt="Banner" className="w-full h-full " />
+        <img src={imageSrc} alt="Banner" className="w-full h-full " />
       </div>
     </div>
   );
