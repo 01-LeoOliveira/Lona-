@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 
-const Piscina = () => {
+const Piscina: React.FC = () => {
   return (
     <div>
       {/* Passando a imagem específica da piscina para o Header */}
@@ -10,19 +10,21 @@ const Piscina = () => {
       <Nav />
       {/* Conteúdo específico da página */}
       <div className="py-8 px-4">
-        <h1 className="text-3xl font-bold text-center text-[#268735]">Lona para Piscina</h1>
-        <p className="mt-4 text-lg text-gray-700 text-center max-w-2xl mx-auto bg-piscina text-white p-4 rounded-lg">
-          Nossa lona para piscina é fabricada com material de alta resistência, ideal para proteger e manter a água da sua piscina sempre limpa. Disponível em várias dimensões e cores para se adequar às suas necessidades. 
-          Aproveite a qualidade e durabilidade que somente a nossa lona pode oferecer!
-        </p>
-
-        {/* Opcional: Se quiser adicionar uma imagem ou detalhes extras */}
-        <div className="flex justify-center mt-8">
-          <img
-            src="/imagens/bg.png"
-            alt="Detalhes da Lona para Piscina"
-            className="rounded-lg shadow-lg w-full max-w-md"
-          />
+        {/* Adicionei `mb-10` para aumentar a margem inferior do <h1> */}
+        <h1 className="text-4xl font-bold text-center text-[#268735] mb-10">
+          Lona para Piscina
+        </h1>
+        <div className="flex justify-start">
+          {/* Contêiner externo que posiciona o bloco à esquerda e adiciona seta */}
+          <div className="relative bg-[#4B994B] text-white p-6 md:p-10 lg:p-12 rounded-lg shadow-lg
+          w-full md:w-3/5 ml-0 mr-auto before:content-[''] before:absolute before:right-[-30px] before:top-0 
+          before:bottom-0 before:border-y-[30px] before:border-y-transparent before:border-l-[30px] before:border-l-[#4B994B] 
+          rounded-r-none md:before:right-[-40px] md:before:border-y-[70px] md:before:border-l-[40px]">
+            {/* Bloco interno para o texto */}
+            <p className="text-left">
+              Nossas lonas são da mais alta qualidade, nesta sessão você pode verificar as lonas para piscinas já prontas, ou solicitar uma a partir da opção “Produto Personalizado”.
+            </p>
+          </div>
         </div>
       </div>
     </div>
